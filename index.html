@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brayden Toulouse - Resume</title>
+    <meta name="description" content="Hospitality management professional specializing in banquet operations, F&B management, and guest services.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --maroon: #500000;
+            --light-maroon: #6B1B1B;
+            --navy: #000080;
+            --cream: #F5F5DC;
+            --white: #FFFFFF;
+            --light-gray: #F8F9FA;
+            --text-dark: #2C3E50;
+            --text-light: #6C757D;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--cream) 0%, var(--light-gray) 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 30px;
+            border-bottom: 3px solid var(--maroon);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--maroon);
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .contact-info a {
+            color: var(--navy);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--maroon);
+        }
+
+        .contact-info span {
+            color: var(--text-light);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: var(--maroon);
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--light-gray);
+        }
+
+        h3 {
+            font-size: 18px;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .job {
+            margin-bottom: 30px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .job-date {
+            font-size: 14px;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .company {
+            font-size: 16px;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-category h3 {
+            font-size: 16px;
+            color: var(--maroon);
+            margin-bottom: 12px;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--light-gray);
+            color: var(--text-dark);
+            border-radius: 20px;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+
+        .skill-tag:hover {
+            background: var(--maroon);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .school {
+            color: var(--navy);
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+
+            .skill-tag:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Brayden Toulouse</h1>
+            <p class="tagline">Hospitality Management Professional</p>
+            <div class="contact-info">
+                <span><a href="mailto:brayden@toulousemail.com">brayden@toulousemail.com</a></span>
+                <span>•</span>
+                <span><a href="tel:+16828887858">(682) 888-7858</a></span>
+                <span>•</span>
+                <span>Brazos County, TX</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="school">Texas A&M University</div>
+                <div class="degree">Bachelor's in Hospitality Management</div>
+                <div class="job-date">Expected Graduation: 2026</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Banquet Captain / F&B Supervisor</div>
+                    <div class="job-date">Oct 2024 - Present</div>
+                </div>
+                <div class="company">Valencia Hotel Group - The George & Cavalry Court</div>
+                <ul>
+                    <li>Coordinates banquet staff in production of a wide range of events (dinners, receptions, meetings) from set-up to tear down</li>
+                    <li>Implements Banquet Event Orders precisely and efficiently responds to client needs and requests</li>
+                    <li>Supports and manages on-site restaurant and bar often, ensuring excellent guest service and efficient operations</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Bartender / Manager</div>
+                    <div class="job-date">Mar 2021 - May 2022, Mar 2024 - Oct 2024</div>
+                </div>
+                <div class="company">Tipsy Turtle / Paddock Lane</div>
+                <ul>
+                    <li>Leads team of 10 in small extremely high volume bar to an output of up to 2500 drinks per night</li>
+                    <li>Consults with owner and upper management on improvements and how best to implement them</li>
+                    <li>Developed and instituted a comprehensive SOP framework that improved operational efficiency, employee morale, and reduced staff turnover</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Assistant Food & Beverage Manager</div>
+                    <div class="job-date">Oct 2022 - Sept 2023</div>
+                </div>
+                <div class="company">Le Meridien Houston - Davidson Hospitality</div>
+                <ul>
+                    <li>Ensured excellent guest service and satisfaction in Zutro Restaurant and Z on 23 Rooftop Bar</li>
+                    <li>Assigned variety of tasks including inventory, payroll, menu creation, POS management (designated property champion), and P&L</li>
+                    <li>Delivered amenities and coordinated with sales on events and activations for outlets</li>
+                    <li>Drove F&B revenue 20% above target in Q4 2022 through strategic cost management and innovative promotional strategies</li>
+                    <li>Represented outlets and F&B during leadership meetings and throughout the hotel</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Bartender</div>
+                    <div class="job-date">Aug 2022 - Mar 2023</div>
+                </div>
+                <div class="company">Como Social Club; Westin Woodlands - Coraltree Hospitality</div>
+                <ul>
+                    <li>Served beer, wine, and craft cocktails to a wide range of hotel guests, locals, and event attendees</li>
+                    <li>Implemented strategies that enhanced service efficiency and elevated guest experience ratings</li>
+                    <li>Recognized as the top-requested bartender for high-profile events, serving several dozen VIP guests multiple times a week</li>
+                    <li>Remained employed on an on-call basis as a result of positive performance and relationships</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title">Lead Pool Bartender</div>
+                    <div class="job-date">Apr 2022 - Aug 2022</div>
+                </div>
+                <div class="company">Cool Water Cafe; Woodlands Resort - Coraltree Hospitality</div>
+                <ul>
+                    <li>Built craft cocktails and served beer, wine, mixed drinks in consistent and competent manner</li>
+                    <li>Upheld a commendable level of service and guest engagement during peak Texas summer weather</li>
+                    <li>Exceeded management expectations in competency and service</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Computer Knowledge</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Google Suite</span>
+                        <span class="skill-tag">Microsoft Office</span>
+                        <span class="skill-tag">Teams</span>
+                        <span class="skill-tag">Slack</span>
+                        <span class="skill-tag">Windows</span>
+                        <span class="skill-tag">MacOS</span>
+                        <span class="skill-tag">Adobe Creative Cloud</span>
+                        <span class="skill-tag">Oracle Simphony</span>
+                        <span class="skill-tag">ADP</span>
+                        <span class="skill-tag">HotelEffectiveness</span>
+                        <span class="skill-tag">MyHotelTeam</span>
+                        <span class="skill-tag">Provi</span>
+                        <span class="skill-tag">Alice</span>
+                        <span class="skill-tag">Tabit POS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Industry Knowledge</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Guest Services</span>
+                        <span class="skill-tag">Inventory Management</span>
+                        <span class="skill-tag">POS Systems</span>
+                        <span class="skill-tag">Payroll Operations</span>
+                        <span class="skill-tag">Conflict Resolution</span>
+                        <span class="skill-tag">P&L Analysis</span>
+                        <span class="skill-tag">Labor Management</span>
+                        <span class="skill-tag">Forecasting</span>
+                        <span class="skill-tag">Beverage Management</span>
+                        <span class="skill-tag">Restaurant Management</span>
+                        <span class="skill-tag">Guest Recovery</span>
+                        <span class="skill-tag">Banquets & Catering</span>
+                        <span class="skill-tag">In-Room Dining</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Relevant Coursework</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Managing Hospitality Organizations</span>
+                        <span class="skill-tag">Event Management</span>
+                        <span class="skill-tag">Global Communities</span>
+                        <span class="skill-tag">Event Operations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
